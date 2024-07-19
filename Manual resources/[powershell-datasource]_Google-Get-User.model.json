@@ -1,0 +1,98 @@
+[
+    {
+        "key":  "kind",
+        "type":  0
+    },
+    {
+        "key":  "id",
+        "type":  0
+    },
+    {
+        "key":  "etag",
+        "type":  0
+    },
+    {
+        "key":  "primaryEmail",
+        "type":  0
+    },
+    {
+        "key":  "name",
+        "type":  0
+    },
+    {
+        "key":  "isAdmin",
+        "type":  0
+    },
+    {
+        "key":  "isDelegatedAdmin",
+        "type":  0
+    },
+    {
+        "key":  "lastLoginTime",
+        "type":  0
+    },
+    {
+        "key":  "creationTime",
+        "type":  0
+    },
+    {
+        "key":  "agreedToTerms",
+        "type":  0
+    },
+    {
+        "key":  "suspended",
+        "type":  0
+    },
+    {
+        "key":  "archived",
+        "type":  0
+    },
+    {
+        "key":  "changePasswordAtNextLogin",
+        "type":  0
+    },
+    {
+        "key":  "ipWhitelisted",
+        "type":  0
+    },
+    {
+        "key":  "emails",
+        "type":  0
+    },
+    {
+        "key":  "languages",
+        "type":  0
+    },
+    {
+        "key":  "nonEditableAliases",
+        "type":  0
+    },
+    {
+        "key":  "customerId",
+        "type":  0
+    },
+    {
+        "key":  "orgUnitPath",
+        "type":  0
+    },
+    {
+        "key":  "isMailboxSetup",
+        "type":  0
+    },
+    {
+        "key":  "isEnrolledIn2Sv",
+        "type":  0
+    },
+    {
+        "key":  "isEnforcedIn2Sv",
+        "type":  0
+    },
+    {
+        "key":  "includeInGlobalAddressList",
+        "type":  0
+    },
+    {
+        "key":  "fullName",
+        "type":  0
+    }
+]

@@ -1,0 +1,168 @@
+[
+    {
+        "key":  "formRow1",
+        "templateOptions":  {
+
+                            },
+        "fieldGroup":  [
+                           {
+                               "key":  "searchfieldMailbox",
+                               "templateOptions":  {
+                                                       "label":  "Search shared mailbox (enter exact email address)",
+                                                       "placeholder":  "Exact email address of shared mailbox",
+                                                       "required":  true,
+                                                       "pattern":  "^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$"
+                                                   },
+                               "type":  "input",
+                               "summaryVisibility":  "Hide element",
+                               "requiresTemplateOptions":  true,
+                               "requiresKey":  true,
+                               "requiresDataSource":  false
+                           },
+                           {
+                               "key":  "searchfieldUser",
+                               "templateOptions":  {
+                                                       "label":  "Search user (enter exact email address)",
+                                                       "required":  true,
+                                                       "placeholder":  "Exact email address of user",
+                                                       "pattern":  "^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$"
+                                                   },
+                               "type":  "input",
+                               "summaryVisibility":  "Hide element",
+                               "requiresTemplateOptions":  true,
+                               "requiresKey":  true,
+                               "requiresDataSource":  false
+                           }
+                       ],
+        "type":  "formrow",
+        "requiresTemplateOptions":  true,
+        "requiresKey":  true,
+        "requiresDataSource":  false
+    },
+    {
+        "key":  "formRow",
+        "templateOptions":  {
+
+                            },
+        "fieldGroup":  [
+                           {
+                               "key":  "mailbox",
+                               "templateOptions":  {
+                                                       "label":  "Select shared mailbox",
+                                                       "required":  true,
+                                                       "grid":  {
+                                                                    "columns":  [
+                                                                                    {
+                                                                                        "headerName":  "Primary Email",
+                                                                                        "field":  "primaryEmail"
+                                                                                    },
+                                                                                    {
+                                                                                        "headerName":  "Full Name",
+                                                                                        "field":  "fullName"
+                                                                                    }
+                                                                                ],
+                                                                    "height":  300,
+                                                                    "rowSelection":  "single"
+                                                                },
+                                                       "dataSourceConfig":  {
+                                                                                "dataSourceGuid":  "$dataSourceGuid_0",
+                                                                                "input":  {
+                                                                                              "propertyInputs":  [
+                                                                                                                     {
+                                                                                                                         "propertyName":  "searchValue",
+                                                                                                                         "otherFieldValue":  {
+                                                                                                                                                 "otherFieldKey":  "searchfieldMailbox"
+                                                                                                                                             }
+                                                                                                                     }
+                                                                                                                 ]
+                                                                                          }
+                                                                            },
+                                                       "useFilter":  false,
+                                                       "allowCsvDownload":  true,
+                                                       "defaultSelectorProperty":  "primaryEmail",
+                                                       "useDefault":  true
+                                                   },
+                               "hideExpression":  "!model[\"searchfieldMailbox\"]",
+                               "type":  "grid",
+                               "summaryVisibility":  "Show",
+                               "requiresTemplateOptions":  true,
+                               "requiresKey":  true,
+                               "requiresDataSource":  true
+                           },
+                           {
+                               "key":  "user",
+                               "templateOptions":  {
+                                                       "label":  "Select user",
+                                                       "required":  true,
+                                                       "grid":  {
+                                                                    "columns":  [
+                                                                                    {
+                                                                                        "headerName":  "Primary Email",
+                                                                                        "field":  "primaryEmail"
+                                                                                    },
+                                                                                    {
+                                                                                        "headerName":  "Full Name",
+                                                                                        "field":  "fullName"
+                                                                                    }
+                                                                                ],
+                                                                    "height":  300,
+                                                                    "rowSelection":  "single"
+                                                                },
+                                                       "dataSourceConfig":  {
+                                                                                "dataSourceGuid":  "$dataSourceGuid_1",
+                                                                                "input":  {
+                                                                                              "propertyInputs":  [
+                                                                                                                     {
+                                                                                                                         "propertyName":  "searchValue",
+                                                                                                                         "otherFieldValue":  {
+                                                                                                                                                 "otherFieldKey":  "searchfieldUser"
+                                                                                                                                             }
+                                                                                                                     }
+                                                                                                                 ]
+                                                                                          }
+                                                                            },
+                                                       "useDefault":  true,
+                                                       "searchPlaceHolder":  "Search this data",
+                                                       "allowCsvDownload":  false,
+                                                       "defaultSelectorProperty":  "primaryEmail"
+                                                   },
+                               "hideExpression":  "!model[\"searchfieldUser\"]",
+                               "type":  "grid",
+                               "summaryVisibility":  "Show",
+                               "requiresTemplateOptions":  true,
+                               "requiresKey":  true,
+                               "requiresDataSource":  true
+                           }
+                       ],
+        "type":  "formrow",
+        "requiresTemplateOptions":  true,
+        "requiresKey":  true,
+        "requiresDataSource":  false
+    },
+    {
+        "key":  "action",
+        "templateOptions":  {
+                                "label":  "Action to perform",
+                                "required":  true,
+                                "useObjects":  true,
+                                "useDataSource":  false,
+                                "useFilter":  false,
+                                "options":  [
+                                                {
+                                                    "value":  "addUserToMailbox",
+                                                    "text":  "Add delegate to mailbox"
+                                                },
+                                                {
+                                                    "value":  "removeUserFromMailbox",
+                                                    "text":  "Remove delegate from mailbox"
+                                                }
+                                            ]
+                            },
+        "type":  "dropdown",
+        "summaryVisibility":  "Show",
+        "textOrLabel":  "text",
+        "requiresTemplateOptions":  true,
+        "requiresKey":  true,
+        "requiresDataSource":  false
+    }
+]
