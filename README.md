@@ -89,12 +89,13 @@ Follow these steps:
 For more information, please see: [Create a Google Cloud project](https://developers.google.com/workspace/guides/create-project).
 
 ### Enable Google Workspace APIs
-Next, enable the necessary Google Workspace APIs in your Google Cloud project. For this connector, we use the **Admin SDK API**.
+Next, enable the necessary Google Workspace APIs in your Google Cloud project. For this connector, we use the **Admin SDK API** and the **Gmail API**.
 
 Follow these steps:
 
 1. In your Google Cloud project, navigate to the “APIs & Services” > “Library” section.
 2. Search for “Admin SDK” and enable it.
+3. Search for “Gmail API” and enable it.
 
 For more information, please see: [Enable Google Workspace APIs](https://developers.google.com/workspace/guides/enable-apis).
 
